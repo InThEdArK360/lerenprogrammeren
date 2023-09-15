@@ -1,4 +1,4 @@
-<!doctype html>
+<!--<!doctype html>-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,31 +9,32 @@
 </head>
 <body>
 <!--begin html-->
-<h1>DataType conversion</h1>
+<h1>Datatype conversion</h1>
 <h2>number, parseFloat, parseInt</h2>
 <h3>var, let, const</h3>
+
+<p>Uitbreiding: vraag nu ook het aantal bij te tellen geboortejaren op.</p>
+<p>Hoeveel jaren wens je erbij te tellen?</p>
 
 <p id="myResult"></p>
 
 
 
 <!--end html-->
-<!--begin Javascript-->
 
+<!--begin javascript-->
 <script>
-let yearOfBirth = window.prompt("what is your year of birth?");
-yearOfBirth = Number(yearOfBirth);
-
+let yearOfBirth = window.prompt("What is your birth year?");
+// yearOfBirth = YeartOfBirth + 1;
+yearOfBirth = Number(yearOfBirth)+1;
 document.getElementById("myResult").innerHTML = yearOfBirth;
 
-yearOfBirth+=1;
-console.log(yearOfBirth);
-
+// console.log(yearOfBirth);
 
 
 
 
 </script>
-<!--end Javascript-->
+<!--end javascript-->
 </body>
 </html>
